@@ -1,0 +1,21 @@
+<p (click)="changeColor()"
+[hidden]="isHidden"
+[style.color]="couleur">
+  first works!
+</p>
+
+<button
+  (click)="afficherCacher()"
+  class="btn btn-primary">
+  cacher / afficher
+</button>
+
+<input
+ #monInput
+ type="text" class="form-control">
+
+<button
+  (click)="afficher(monInput.value)"
+>Show input content</button>
+Le contenu de l'input {{message}}
+<app-second></app-second>

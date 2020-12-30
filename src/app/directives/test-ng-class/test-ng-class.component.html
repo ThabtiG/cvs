@@ -1,0 +1,6 @@
+<p
+  *ngIf="isAllume"
+>test-ng-class works!</p>
+
+<div (click)="interrupteur()" [ngClass]="{ lampe: isAllume }">Lampe</div>
+
